@@ -1,0 +1,17 @@
+<section class="list-area">
+    <div class="container">
+        <div class="container-element">
+            <ul>
+                <li class="" *ngIf="getProduct$ | async as getData; else ''">
+                   <h2>
+                    {{getData?.title}}
+                   </h2>
+                    <p>
+                        {{getData?.body}}
+                    </p>
+                    <a routerLink="/list">{{'Back'}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

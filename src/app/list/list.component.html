@@ -1,0 +1,17 @@
+<section class="list-area">
+    <div class="container">
+        <div class="container-element">
+            <ul>
+                <li class="" *ngFor="let item of (listingData$ | async)">
+                   <h2>
+                    {{item?.title}}
+                   </h2>
+                    <p>
+                        {{item?.body}}
+                    </p>
+                    <a routerLink="/product/{{item?.id}}">{{'View'}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
